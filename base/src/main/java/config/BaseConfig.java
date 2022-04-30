@@ -14,6 +14,24 @@ public class BaseConfig {
             + File.separator + "main" + File.separator + "resources" + File.separator + "config" + File.separator
             + "config.properties");
 
+    public static Map<Object, String> appConfig() {
+        try {
+            properties = loadProperties();
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
+
+        Map<Object, String> appConfig = new HashMap<>();
+
+        if (properties != null) {
+            appConfig.put(AppProperties.URL, properties.getProperty("app_url"));
+            appConfig.put(AppProperties.HOST, properties.getProperty("app_host"));
+            appConfig.put(AppProperties.USER, properties.getProperty("app_user"));
+            appConfig.put(AppProperties.PASSWORD, properties.getProperty("app_password"));
+        }
+
+        return appConfig;
+    }
     public static Map<Object, String> databaseConfig() {
         try {
             properties = loadProperties();
@@ -43,6 +61,9 @@ public class BaseConfig {
         return prop;
     }
 
+    public enum AppProperties {
+        URL, HOST, USER, PASSWORD
+    }
     public enum DBProperties {
         DRIVER_CLASS, HOST, USER, PASSWORD
     }
