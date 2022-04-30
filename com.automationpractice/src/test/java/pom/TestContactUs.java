@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import test_base.TestBasePage;
 import utils.GenerateData;
 
-public class ContactUsTest extends TestBasePage {
+public class TestContactUs extends TestBasePage {
     @Test
     public void testContactCustomerService(){
         Homepage homepage = new Homepage();

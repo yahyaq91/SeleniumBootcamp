@@ -5,6 +5,9 @@ import app.pom.Homepage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import test_base.TestBasePage;
+import utils.ExcelData;
+
+import java.io.File;
 
 public class TestFilters extends TestBasePage {
     @Test
@@ -13,6 +16,9 @@ public class TestFilters extends TestBasePage {
 
         Catalog catalog = homepage.selectWomenOption();
         catalog.selectBlackOption();
+
+
+        //Assert.assertTrue(excel.readStringList(LoginValidEmailInvalidPass));
 
         Assert.assertTrue(isElementVisible(catalog.filterConfirmation));
     }
