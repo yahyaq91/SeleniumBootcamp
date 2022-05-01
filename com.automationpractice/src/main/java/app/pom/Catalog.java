@@ -209,7 +209,7 @@ public class Catalog extends SystemBar {
     public void clickFashionManufacturerFilter(){clickOnElement(fashionManufacturerFilter);}
     public void clickNewConditionFilter(){clickOnElement(conditionNewFilter);}
     public void clickDiscoverStoreButton(){clickOnElement(discoverStoreButton);}
-    public void enterSearchData(String keys){sendKeysToElement(enterAddressBar, keys);}
+    public void enterSearchData(String keys){clearSendKeysToElement(enterAddressBar, keys);}
     public void selectRadius(int index){selectFromDropdownByIndex(setRadius, index);}
     public void clickSearchButton(){clickOnElement(searchButton);}
     public void clickSpecialsButton(){clickOnElement(specialsButton);}

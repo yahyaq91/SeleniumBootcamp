@@ -14,6 +14,7 @@ public class TestSearchFunction extends TestBasePage {
         catalog.clickSubmitSearchButton();
 
         Assert.assertTrue(isElementVisible(catalog.searchConfirmation));
+        Assert.assertEquals(getElementText(catalog.searchConfirmation), excel.readStringList("SearchFunction").get(0));
     }
     @Test
     public void testSearchForLocalStore(){
@@ -26,6 +27,7 @@ public class TestSearchFunction extends TestBasePage {
         catalog.clickSearchButton();
 
        Assert.assertTrue(isElementVisible(catalog.locatorConfirmation));
+        Assert.assertEquals(getElementText(catalog.locatorConfirmation), excel.readStringList("SearchFunction").get(1));
     }
     @Test
     public void testSearchForSpecials(){
@@ -35,6 +37,7 @@ public class TestSearchFunction extends TestBasePage {
         catalog.clickSpecialsButton();
 
         Assert.assertTrue(isElementVisible(catalog.specialsConfirmation));
+        Assert.assertEquals(getElementText(catalog.specialsConfirmation), excel.readStringList("SearchFunction").get(2));
     }
 
 }

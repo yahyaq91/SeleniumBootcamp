@@ -20,7 +20,7 @@ public class SystemBar extends BasePage {
     @FindBy(xpath = "//div[@id='enabled_filters']/ul/li")
     public WebElement filterConfirmation;
 
-    @FindBy(xpath = "//h1[@class='page-heading  product-listing']")
+    @FindBy(xpath = "//span[@class='lighter']")
     public WebElement searchConfirmation;
 
     @FindBy(xpath = "//p[@class='alert alert-success']")
