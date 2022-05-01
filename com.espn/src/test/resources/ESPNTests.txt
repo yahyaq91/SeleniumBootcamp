@@ -54,9 +54,60 @@ Click 'Teams' in the options available under soccer
 Once teams page loads hover over the 'Teams' tab
 Select Liverpool
 
-Test Case #8: Find Borussia Dortmund ESPN page.
+Test Case #9: Find Borussia Dortmund ESPN page.
 Navigate to URL
 Click 'Soccer'
 Click 'Teams' in the options available under soccer
 Once teams page loads hover over the 'Teams' tab
 Select Borussia Dortmund
+
+Test Case #10: Obtaining Real Madrid Stats On Performance.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Real Madrid
+Select Stats
+Select Performance
+
+Test Case #11: Obtaining Real Madrid Stats On Discipline.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Real Madrid
+Select Stats
+Select Discipline
+
+Test Case #12: Obtaining Real Madrid Stats On Scoring.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Real Madrid
+Select Stats
+Select Scoring
+
+Test Case #13: Obtaining Real Madrid Results.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Real Madrid
+Select Results
+
+Test Case #14: Obtaining Real Madrid's Squad List.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Real Madrid
+Select Squad
+
+Test Case #15: Obtaining Real Madrid's Transfers.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Real Madrid
+Select Transfers

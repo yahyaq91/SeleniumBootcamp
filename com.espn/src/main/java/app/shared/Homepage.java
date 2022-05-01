@@ -13,6 +13,9 @@ public class Homepage extends BasePage {
 
     @FindBy(xpath = "//h1[@class='ClubhouseHeader__Name ttu flex items-start n2']")
     public WebElement teamSelectionConfirmation;
+
+    @FindBy(xpath = "//h1[@class='headline headline__h1 dib']")
+    public WebElement teamInfoSelectionConfirmation;
     
 
     public Homepage() {

@@ -14,6 +14,7 @@ public class SoccerPage extends Homepage {
     public WebElement teams;
 
 
+
     public SoccerPage() {
         PageFactory.initElements(driver, this);
     }
@@ -23,10 +24,17 @@ public class SoccerPage extends Homepage {
     public void hoverTeams(){
         hoverOverElement(teams);
     }
-
     public void teamSelection(String team){
         driver.findElement(By.xpath(String.format("//ul[@class='Nav__Dropdown__Menu__List']//span[contains(text(),'%s')]",team))).click();
 
+    }
+    public void navigationOptions(String option){
+        driver.findElement(By.xpath(String.format("//ul[@class='Nav__Secondary__Menu center flex items-center relative']//span[contains(text(),'%s')]",
+                option))).click();
+
+    }
+    public void selectStatsCriteria(String criteria){
+        driver.findElement(By.xpath(String.format("//ul[@class='tabs__list']//a[contains(text(),'%s')]", criteria))).click();
     }
 
 }
