@@ -11,10 +11,7 @@ public class SystemBar extends BasePage {
     @FindBy(xpath = "//a[@class='login']")
     public WebElement loginButton;
 
-    @FindBy(xpath = "//a[@class='account']")
-    public WebElement accountButton;
-
-    @FindBy(xpath = "//i[@class='icon-ok']")
+    @FindBy(xpath = "//div[@id=\"layer_cart\"]/div[1]/div[1]/h2")
     public WebElement addedToCartConfirmation;
 
     @FindBy(xpath = "//div[@id='enabled_filters']/ul/li")

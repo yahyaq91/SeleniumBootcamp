@@ -18,6 +18,7 @@ public class AddingItemsToCart extends TestBasePage {
         catalog.pressAddToCartButton();
 
         Assert.assertTrue(isElementVisible(catalog.addedToCartConfirmation));
+        Assert.assertEquals(getElementText(catalog.addedToCartConfirmation), excel.readStringList("AddingToCart").get(0));
     }
     @Test
     public void testIncreasingQuantityWithInputtingQuantity(){
@@ -30,6 +31,7 @@ public class AddingItemsToCart extends TestBasePage {
         catalog.pressAddToCartButton();
 
         Assert.assertTrue(isElementVisible(catalog.addedToCartConfirmation));
+        Assert.assertEquals(getElementText(catalog.addedToCartConfirmation), excel.readStringList("AddingToCart").get(0));
     }
     @Test
     public void testSelectingColorOption(){
@@ -42,6 +44,7 @@ public class AddingItemsToCart extends TestBasePage {
         catalog.pressAddToCartButton();
 
         Assert.assertTrue(isElementVisible(catalog.addedToCartConfirmation));
+        Assert.assertEquals(getElementText(catalog.addedToCartConfirmation), excel.readStringList("AddingToCart").get(0));
     }
 
 }
