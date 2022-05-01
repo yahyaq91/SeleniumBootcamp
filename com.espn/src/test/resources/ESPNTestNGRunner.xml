@@ -9,4 +9,17 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://espn.com"/>
 
+    <test name="Soccer - Locating Teams">
+        <classes>
+            <class name="espn.soccer_page.TestLocatingSoccerTeams"/>
+        </classes>
+    </test>
+
+    <test name="Soccer - Team Info">
+        <classes>
+            <class name="espn.soccer_page.TestTeamInfo"/>
+        </classes>
+    </test>
+
+
 </suite>
