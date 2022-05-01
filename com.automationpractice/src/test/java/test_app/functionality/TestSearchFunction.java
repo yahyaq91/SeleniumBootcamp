@@ -19,7 +19,7 @@ public class TestSearchFunction extends TestBasePage {
     public void testSearchForLocalStore(){
         Homepage homepage = new Homepage();
 
-        Catalog catalog = homepage.selectWomenOption();
+        Catalog catalog = homepage.clickWomenOption();
         catalog.clickDiscoverStoreButton();
         catalog.enterSearchData("10029");
         catalog.selectRadius(2);
@@ -31,7 +31,7 @@ public class TestSearchFunction extends TestBasePage {
     public void testSearchForSpecials(){
         Homepage homepage = new Homepage();
 
-        Catalog catalog = homepage.selectWomenOption();
+        Catalog catalog = homepage.clickWomenOption();
         catalog.clickSpecialsButton();
 
         Assert.assertTrue(isElementVisible(catalog.specialsConfirmation));

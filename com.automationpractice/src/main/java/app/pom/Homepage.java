@@ -34,7 +34,7 @@ public class Homepage extends SystemBar {
 
         return new Catalog();
     }
-    public Catalog selectWomenOption(){
+    public Catalog clickWomenOption(){
         clickOnElement(womenOption);
 
         return new Catalog();

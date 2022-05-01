@@ -78,7 +78,7 @@ public class BasePage {
 
     @Parameters({"driverConfigEnabled", "browser", "url"})
     @BeforeMethod
-    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("http://mbusa.com") String url) {
+    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("http://automationpractice.com") String url) {
         if (Boolean.parseBoolean(driverConfigEnabled)) {
             driverInit(browser);
             driver.get(url);
@@ -167,6 +167,18 @@ public class BasePage {
         actions.moveToElement(element).perform();
     }
 
+    public String getElementText(WebElement element) {
+        String text = "";
+        webDriverWait.until(ExpectedConditions.visibilityOf(element));
+
+        text = element.getText();
+
+        if (text.equals("")) {
+            text = element.getAttribute("innerHTML");
+        }
+
+        return text;
+    }
     public String getTrimmedElementText(WebElement element) {
         String text = "";
         webDriverWait.until(ExpectedConditions.visibilityOf(element));
@@ -209,6 +221,14 @@ public class BasePage {
     public void selectFromDropdownByValue(WebElement element, String value) {
         Select select = new Select(element);
         select.selectByValue(value);
+    }
+    public boolean isElementInvisible(WebElement element) {
+        try {
+            webDriverWait.until(ExpectedConditions.invisibilityOf(element));
+        } catch (TimeoutException e) {
+            return false;
+        }
+        return true;
     }
 
     public boolean isElementVisible(WebElement element) {
