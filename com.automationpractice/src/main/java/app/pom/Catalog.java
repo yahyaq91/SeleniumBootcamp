@@ -7,7 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Catalog extends SystemBar {
 
-
     @FindBy(xpath = "//div[@class='left-block']")
     public WebElement fadedShortSleeveTShirts;
     @FindBy(xpath = "//i[@class='icon-plus']")
@@ -213,5 +212,4 @@ public class Catalog extends SystemBar {
     public void selectRadius(int index){selectFromDropdownByIndex(setRadius, index);}
     public void clickSearchButton(){clickOnElement(searchButton);}
     public void clickSpecialsButton(){clickOnElement(specialsButton);}
-
 }

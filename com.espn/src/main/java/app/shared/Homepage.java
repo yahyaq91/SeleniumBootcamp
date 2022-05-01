@@ -10,6 +10,9 @@ public class Homepage extends BasePage {
 
     @FindBy(xpath = "//li[@class='sports menu-soccer']")
     public WebElement soccerTab;
+
+    @FindBy(xpath = "//h1[@class='ClubhouseHeader__Name ttu flex items-start n2']")
+    public WebElement teamSelectionConfirmation;
     
 
     public Homepage() {

@@ -1,0 +1,62 @@
+Test Case #1: Find Real Madrid ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Real Madrid
+
+Test Case #2: Find PSG ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select PSG
+
+Test Case #3: Find Manchester United ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Manchester United
+
+Test Case #4: Find Manchester City ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Manchester City
+
+Test Case #5: Find Juventus ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Juventus
+
+Test Case #6: Find Bayern Munich ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Bayern Munich
+
+Test Case #7: Find Barcelona ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Barcelona
+
+Test Case #8: Find Liverpool ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Liverpool
+
+Test Case #8: Find Borussia Dortmund ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Borussia Dortmund
