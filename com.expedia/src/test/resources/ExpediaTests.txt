@@ -1,0 +1,19 @@
+Test Case #1: Obtaining Info On Multimedia.
+Navigate to URL
+Click on 'Newsroom'
+Click 'Multimedia'
+
+Test Case #2: Obtaining Info On Awards.
+Navigate to URL
+Click on 'Newsroom'
+Click 'Awards'
+
+Test Case #3: Obtaining Info On Expedia International.
+Navigate to URL
+Click on 'Newsroom'
+Click 'Expedia International'
+
+Test Case #4: Obtaining Info On Out Travel The System.
+Navigate to URL
+Click on 'Newsroom'
+Click 'Out Travel The System'
