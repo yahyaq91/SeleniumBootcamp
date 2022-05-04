@@ -13,6 +13,9 @@ public class Homepage extends SystemBar {
     @FindBy(xpath = "//a[@title='Women']")
     public WebElement womenOption;
 
+    @FindBy(xpath = "//a[@class='account']")
+    public WebElement accountButton;
+
     @FindBy(id = "search_query_top")
     public WebElement searchBar;
 
