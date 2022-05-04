@@ -17,3 +17,39 @@ Test Case #4: Obtaining Info On Out Travel The System.
 Navigate to URL
 Click on 'Newsroom'
 Click 'Out Travel The System'
+
+Test Case #5: Searching for vacations to NYC.
+Navigate to URL
+Select destination
+Select dates
+Apply search criteria to obtain results
+
+Test Case #6: Searching for vacations to Mexico.
+Navigate to URL
+Select destination
+Select dates
+Apply search criteria to obtain results
+
+Test Case #7: Searching for vacations to South Africa.
+Navigate to URL
+Select destination
+Select dates
+Apply search criteria to obtain results
+
+Test Case #8 Searching for vacations to Istambul.
+Navigate to URL
+Select destination
+Select dates
+Apply search criteria to obtain results
+
+Test Case #9 Searching for vacations to Japan.
+Navigate to URL
+Select destination
+Select dates
+Apply search criteria to obtain results
+
+Test Case #10 Searching for vacations to Turkey.
+Navigate to URL
+Select destination
+Select dates
+Apply search criteria to obtain results

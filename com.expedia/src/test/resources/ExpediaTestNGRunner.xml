@@ -15,4 +15,10 @@
         </classes>
     </test>
 
+    <test name="Expedia - Flights">
+        <classes>
+            <class name="expedia.TestVacationSearch"/>
+        </classes>
+    </test>
+
 </suite>
