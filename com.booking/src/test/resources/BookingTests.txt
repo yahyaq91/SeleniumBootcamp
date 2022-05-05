@@ -1,0 +1,15 @@
+Test Case #1: Searching for Stays in New York.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #2: Searching for Stays in California.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query

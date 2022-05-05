@@ -119,31 +119,6 @@ public class Homepage extends BasePage {
 
     }
 
-    // does not work, see method above
-    public void navigateToBMWModelByName(String modelName) {
-        navigateToBMWAllModels();
-        webDriverWait.until(ExpectedConditions.visibilityOf(allModelsHeadline));
-
-        List<WebElement> models = allBMWModels;
-
-        try {
-            for (WebElement model : models) {
-                if (model.getAttribute("innerHTML").toLowerCase().contains(modelName)) {
-                    model.click();
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        try {
-            ModelPage modelPage = new ModelPage();
-            modelPage.waitForModelNameAnimation();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     public void selectRandomBMWModel() {
         Homepage homepage = new Homepage();
         homepage.hoverOverModelsFlyoutButton();
