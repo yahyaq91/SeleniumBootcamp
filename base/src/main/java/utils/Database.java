@@ -27,6 +27,10 @@ public class Database {
         }
     }
 
+//    public Database() {
+//
+//    }
+
     /**
      * Submits and executes a database query and returns the resultSet
      * @param query The SQL query to be executed

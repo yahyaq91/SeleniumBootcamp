@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ItemVewPage extends SystemBar {
 
 
-    @FindBy(xpath = "//div[@class='left-block']")
+    @FindBy(xpath = "//a[@title='Faded Short Sleeve T-shirts'][@class='product-name']")
     public WebElement fadedShortSleeveTShirts;
     @FindBy(xpath = "//i[@class='icon-plus']")
     public WebElement plusIcon;
