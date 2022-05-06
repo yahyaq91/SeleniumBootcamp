@@ -11,13 +11,13 @@
 
     <test name="Smoke - End_To_End">
         <classes>
-            <class name="test_app.smoke.end_to_end.EndToEnd"/>
+            <class name="test_app.smoke.end_to_end.TestEndToEnd"/>
         </classes>
     </test>
 
     <test name="Smoke - Transactions">
         <classes>
-            <class name="test_app.smoke.transactions.AddingItemsToCart"/>
+            <class name="test_app.smoke.transactions.TestAddingItemsToCart"/>
         </classes>
     </test>
 

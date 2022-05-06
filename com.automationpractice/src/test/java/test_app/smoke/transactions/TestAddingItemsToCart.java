@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import test_base.TestBasePage;
 
-public class AddingItemsToCart extends TestBasePage {
+public class TestAddingItemsToCart extends TestBasePage {
     @Test
     public void testIncreasingQuantityWithIcon(){
         Homepage homepage = new Homepage();

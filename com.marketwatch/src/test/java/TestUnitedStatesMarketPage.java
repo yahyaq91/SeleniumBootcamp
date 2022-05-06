@@ -24,7 +24,7 @@ public class TestUnitedStatesMarketPage extends BasePage {
         Actions navigateDowGraph = new Actions(driver);
 
         {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 4; i++) {
                 navigateDowGraph.moveToElement(marketGraphs, getTopLeftY, getTopLeftX).perform();
                 String data = driver.findElement(By.xpath("//*[@id=\"highcharts-0\"]/div")).getText();
                 System.out.println(data);

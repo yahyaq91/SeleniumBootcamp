@@ -32,6 +32,18 @@ public class SystemBar extends BasePage {
     @FindBy(xpath = "//h1[@class='page-heading product-listing']")
     public WebElement specialsConfirmation;
 
+    @FindBy(xpath = "//h1[@class='page-heading']")
+    public WebElement wishlistConfirmation;
+
+    @FindBy(xpath = "//h1[@class='page-subheading']")
+    public WebElement personalInfoConfirmation;
+
+    @FindBy(xpath = "//h1[@class='page-heading']")
+    public WebElement addressConfirmation;
+
+    @FindBy(xpath = "//h1[@class='page-heading bottom-indent']")
+    public WebElement creditSlipConfirmation;
+
 
     public SystemBar() {
         PageFactory.initElements(driver, this);
