@@ -9,4 +9,10 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://marketwatch.com"/>
 
+    <test name="MarketWatch - USMarket">
+        <classes>
+            <class name="TestUnitedStatesMarketPage"></class>
+        </classes>
+    </test>
+
 </suite>

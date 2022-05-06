@@ -1,0 +1,41 @@
+Test Case #1: Test DOW Rates
+Navigate to URL
+Close pop-up
+Select 'US market'
+Hover over DOW
+Select DOW.
+
+Test Case #2: Test S&P 500 Rates
+Navigate to URL
+Close pop-up
+Select 'US market'
+Hover over S&P 500
+Select S&P 500.
+
+Test Case #3: Test Nasdaq Rates
+Navigate to URL
+Close pop-up
+Select 'US market'
+Hover over Nasdaq
+Select Nasdaq.
+
+Test Case #4: Test Global DOW Rates
+Navigate to URL
+Close pop-up
+Select 'US market'
+Hover over Global DOW
+Select Global DOW.
+
+Test Case #5: Test Gold Rates
+Navigate to URL
+Close pop-up
+Select 'US market'
+Hover over Gold
+Select Gold.
+
+Test Case #6: Test Oil Rates
+Navigate to URL
+Close pop-up
+Select 'US market'
+Hover over Oil
+Select Oil.
