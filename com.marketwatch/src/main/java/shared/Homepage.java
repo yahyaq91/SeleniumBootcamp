@@ -4,12 +4,20 @@ import base.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import pom.AsiaMarket;
+import pom.EuropeMarket;
 import pom.UnitedStatesMarket;
 
 public class Homepage extends BasePage {
 
     @FindBy(xpath = "//a[@href='https://www.marketwatch.com/markets/us']")
     public WebElement usMarket;
+
+    @FindBy(xpath = "//a[@href='https://www.marketwatch.com/markets/europe-middle-east']")
+    public WebElement europeMarket;
+
+    @FindBy(xpath = "//a[@href='https://www.marketwatch.com/markets/asia']")
+    public WebElement asiaMarket;
 
     @FindBy(xpath = "//button[@class='close-btn']")
     public WebElement popUP;
@@ -20,9 +28,20 @@ public class Homepage extends BasePage {
     public Homepage(){
         PageFactory.initElements(driver, this);
     }
-    public UnitedStatesMarket closePopUp(){
+    public UnitedStatesMarket closePopUpToViewUSMarket() {
         clickOnElement(popUP);
 
         return new UnitedStatesMarket();
     }
+    public EuropeMarket closePopUpToViewEuropeMarket(){
+        clickOnElement(popUP);
+
+        return new EuropeMarket();
+    }
+    public AsiaMarket closePopUpToViewAsiaMarket(){
+        clickOnElement(popUP);
+
+        return new AsiaMarket();
+    }
+
 }

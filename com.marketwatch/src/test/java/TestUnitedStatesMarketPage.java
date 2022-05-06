@@ -11,7 +11,7 @@ public class TestUnitedStatesMarketPage extends BasePage {
     @Test
     public void testDOWRates(){
         Homepage homepage = new Homepage();
-        UnitedStatesMarket unitedStatesMarket = homepage.closePopUp();
+        UnitedStatesMarket unitedStatesMarket = homepage.closePopUpToViewUSMarket();
         unitedStatesMarket.selectUSMarket();
         unitedStatesMarket.hoverDOW();
         unitedStatesMarket.clickDOW();
@@ -38,7 +38,7 @@ public class TestUnitedStatesMarketPage extends BasePage {
     @Test
     public void testSP500Rates(){
         Homepage homepage = new Homepage();
-        UnitedStatesMarket unitedStatesMarket = homepage.closePopUp();
+        UnitedStatesMarket unitedStatesMarket = homepage.closePopUpToViewUSMarket();
         unitedStatesMarket.selectUSMarket();
         unitedStatesMarket.hoverSP500();
         unitedStatesMarket.clickSP500();
@@ -65,7 +65,7 @@ public class TestUnitedStatesMarketPage extends BasePage {
     @Test
     public void testNasdaqRates(){
         Homepage homepage = new Homepage();
-        UnitedStatesMarket unitedStatesMarket = homepage.closePopUp();
+        UnitedStatesMarket unitedStatesMarket = homepage.closePopUpToViewUSMarket();
         unitedStatesMarket.selectUSMarket();
         unitedStatesMarket.hoverNasdaq();
         unitedStatesMarket.clickNasdaq();
@@ -92,7 +92,7 @@ public class TestUnitedStatesMarketPage extends BasePage {
     @Test
     public void testGlobalDowRates(){
         Homepage homepage = new Homepage();
-        UnitedStatesMarket unitedStatesMarket = homepage.closePopUp();
+        UnitedStatesMarket unitedStatesMarket = homepage.closePopUpToViewUSMarket();
         unitedStatesMarket.selectUSMarket();
         unitedStatesMarket.hoverGlobalDow();
         unitedStatesMarket.clickGlobalDow();
@@ -119,7 +119,7 @@ public class TestUnitedStatesMarketPage extends BasePage {
     @Test
     public void testGoldRates(){
         Homepage homepage = new Homepage();
-        UnitedStatesMarket unitedStatesMarket = homepage.closePopUp();
+        UnitedStatesMarket unitedStatesMarket = homepage.closePopUpToViewUSMarket();
         unitedStatesMarket.selectUSMarket();
         unitedStatesMarket.hoverGoldPrices();
         unitedStatesMarket.clickGoldPrices();
@@ -146,7 +146,7 @@ public class TestUnitedStatesMarketPage extends BasePage {
     @Test
     public void testOilRates(){
         Homepage homepage = new Homepage();
-        UnitedStatesMarket unitedStatesMarket = homepage.closePopUp();
+        UnitedStatesMarket unitedStatesMarket = homepage.closePopUpToViewUSMarket();
         unitedStatesMarket.selectUSMarket();
         unitedStatesMarket.hoverOilPrices();
         unitedStatesMarket.clickOilPrices();

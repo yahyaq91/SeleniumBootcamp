@@ -11,7 +11,17 @@
 
     <test name="MarketWatch - USMarket">
         <classes>
-            <class name="TestUnitedStatesMarketPage"></class>
+            <class name="TestUnitedStatesMarketPage"/>
+        </classes>
+    </test>
+    <test name="MarketWatch - EuropeMarket">
+        <classes>
+            <class name="TestEuropeMarketPage"/>
+        </classes>
+    </test>
+    <test name="MarketWatch - AsiaMarket">
+        <classes>
+            <class name="TestAsiaMarketPage"/>
         </classes>
     </test>
 
