@@ -13,3 +13,35 @@ select location
 select dates
 select number of guests
 submit search query
+
+Test Case #3: Searching for Stays in London.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #4: Searching for Stays in Paris.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #5: Searching for Stays in Madrid.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #6: Searching for Stays in Milan.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
