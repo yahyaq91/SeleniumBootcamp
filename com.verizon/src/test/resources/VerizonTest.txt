@@ -1,0 +1,29 @@
+Test Case #1: Test Business Smartphones All Brands
+Navigate to URL
+Select 'Business'
+Select 'Shop'
+Select 'All'
+
+Test Case #2: Test Business Smartphones Apple Brands
+Navigate to URL
+Select 'Business'
+Select 'Shop'
+Select 'Apple'
+
+Test Case #3: Test Business Smartphones Samsung Brands
+Navigate to URL
+Select 'Business'
+Select 'Shop'
+Select 'Samsung'
+
+Test Case #4: Test Business Smartphones Motorola Brands
+Navigate to URL
+Select 'Business'
+Select 'Shop'
+Select 'Motorola'
+
+Test Case #5: Test Business Smartphones Google Brands
+Navigate to URL
+Select 'Business'
+Select 'Shop'
+Select 'Google'

@@ -9,4 +9,10 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://verizon.com"/>
 
+    <test name="Business Page - Shop">
+        <classes>
+            <class name="business_page.TestBusinessShopPage"/>
+        </classes>
+    </test>
+
 </suite>
