@@ -15,4 +15,10 @@
         </classes>
     </test>
 
+    <test name="Accessories Page - Phone and Tablet">
+        <classes>
+            <class name="accessories_page.TestAccessories"/>
+        </classes>
+    </test>
+
 </suite>

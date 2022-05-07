@@ -7,8 +7,7 @@ import shared.Homepage;
 
 import java.util.List;
 
-public class PhoneCases extends Homepage {
-
+public class TabletAccessories extends Homepage {
     @FindBy(xpath = "//div[@class='Tile__Pricing-sc-71g958-10 fClbGb blur']/p")
     public List<WebElement> prices;
 
@@ -32,8 +31,9 @@ public class PhoneCases extends Homepage {
         System.out.println("THIS IS THE MINIMUM FOUND! " + min);
         cheapestElement.click();
     }
-    public PhoneCases(){
+    public TabletAccessories(){
         PageFactory.initElements(driver, this);
     }
 
 }
+

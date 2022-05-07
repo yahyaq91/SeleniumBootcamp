@@ -27,3 +27,52 @@ Navigate to URL
 Select 'Business'
 Select 'Shop'
 Select 'Google'
+
+Test Case #6: Test Search For Phone Cases
+Navigate to URL
+Select 'Shop'
+Select 'Accessories'
+Select 'Shop All Accessories'
+Select 'Cases' under phone section
+
+Test Case #7: Test Search For Phone Screen Protectors
+Navigate to URL
+Select 'Shop'
+Select 'Accessories'
+Select 'Shop All Accessories'
+Select 'Screen Protectors' under phone section
+
+Test Case #8: Test Search For Tablet Cases
+Navigate to URL
+Select 'Shop'
+Select 'Accessories'
+Select 'Shop All Accessories'
+Select 'Cases' under tablet section
+
+Test Case #9: Test Search For Phone Cases with MagSafe
+Navigate to URL
+Select 'Shop'
+Select 'Accessories'
+Select 'Shop All Accessories'
+Select 'MagSafe' under phone section
+
+Test Case #10: Test Search For Tablet Screen Protectors
+Navigate to URL
+Select 'Shop'
+Select 'Accessories'
+Select 'Shop All Accessories'
+Select 'Screen Protectors' under tablet section
+
+Test Case #11: Test Search For Tablet Cases with MagSafe
+Navigate to URL
+Select 'Shop'
+Select 'Accessories'
+Select 'Shop All Accessories'
+Select 'MagSafe' under tablet section
+
+Test Case #12: Test Search For Tablet Keyboards
+Navigate to URL
+Select 'Shop'
+Select 'Accessories'
+Select 'Shop All Accessories'
+Select 'Keyboards' under tablet section
