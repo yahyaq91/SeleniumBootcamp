@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pom.AsiaMarket;
 import pom.EuropeMarket;
+import pom.FXMarket;
 import pom.UnitedStatesMarket;
 
 public class Homepage extends BasePage {
@@ -18,6 +19,9 @@ public class Homepage extends BasePage {
 
     @FindBy(xpath = "//a[@href='https://www.marketwatch.com/markets/asia']")
     public WebElement asiaMarket;
+
+    @FindBy(xpath = "//a[@href='https://www.marketwatch.com/investing/currencies']")
+    public WebElement fxMarket;
 
     @FindBy(xpath = "//button[@class='close-btn']")
     public WebElement popUP;
@@ -42,6 +46,11 @@ public class Homepage extends BasePage {
         clickOnElement(popUP);
 
         return new AsiaMarket();
+    }
+    public FXMarket closePopUpToViewFXMarket(){
+        clickOnElement(popUP);
+
+        return new FXMarket();
     }
 
 }

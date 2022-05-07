@@ -24,5 +24,10 @@
             <class name="TestAsiaMarketPage"/>
         </classes>
     </test>
+    <test name="MarketWatch - FXMarket">
+        <classes>
+            <class name="TestFXMarketPage"/>
+        </classes>
+    </test>
 
 </suite>

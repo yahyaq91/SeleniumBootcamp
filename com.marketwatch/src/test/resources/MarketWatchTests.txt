@@ -112,3 +112,39 @@ Navigate to URL
 Close pop-up
 Select 'Asia Market'
 Select Singapore.
+
+Test Case #19: Test Euro Rates
+Navigate to URL
+Close pop-up
+Select 'FX Market'
+Select Euro.
+
+Test Case #20: Test Yen Rates
+Navigate to URL
+Close pop-up
+Select 'FX Market'
+Select Yen.
+
+Test Case #21: Test Pound Rates
+Navigate to URL
+Close pop-up
+Select 'FX Market'
+Select Pound.
+
+Test Case #22: Test Australia$ Rates
+Navigate to URL
+Close pop-up
+Select 'FX Market'
+Select Australia$.
+
+Test Case #23: Test XY Index Rates
+Navigate to URL
+Close pop-up
+Select 'FX Market'
+Select XY Index.
+
+Test Case #24: Test WSJ $ Idx Rates
+Navigate to URL
+Close pop-up
+Select 'FX Market'
+Select WSJ $ Idx.
