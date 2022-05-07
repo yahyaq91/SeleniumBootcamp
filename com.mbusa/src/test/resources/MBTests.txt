@@ -1,0 +1,11 @@
+Test Case #1: Test Mercedes-AMG Engine View.
+Navigate to URL
+Select 'Vehicles'
+Select 'Mercedes-AMG'
+Select '3' in the media player.
+
+Test Case #2: Test Mercedes-AMG Performance View.
+Navigate to URL
+Select 'Vehicles'
+Select 'Mercedes-AMG'
+Select '4' in the media player.

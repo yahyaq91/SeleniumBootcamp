@@ -2,9 +2,16 @@ package shared;
 
 import base.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Homepage extends BasePage {
+
+    @FindBy(xpath = "//span[@class='chapter-engine__eyebrow']")
+    public WebElement amgEngineViewConfirmation;
+    @FindBy(xpath = "//div[@class='specialty-carousel__counter']")
+    public WebElement amgPerformanceViewConfirmation;
 
     public Homepage(){
         PageFactory.initElements(driver, this);
