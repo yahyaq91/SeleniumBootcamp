@@ -18,7 +18,7 @@ public class TestBookingPage extends Homepage {
         if(homepage.popUp.isDisplayed()){
             homepage.closePopUp();
         }
-        Assert.assertEquals(getElementText(homepage.destinationConfirmation), excel.readStringList("Locations").get(0));
+        Assert.assertEquals(getElementText(homepage.staysSearchConfirmation), excel.readStringList("Locations").get(0));
     }
     @Test
     public void testCaliforniaStay() {
@@ -36,7 +36,7 @@ public class TestBookingPage extends Homepage {
             homepage.closePopUp();
         }
 
-        Assert.assertEquals(getElementText(homepage.destinationConfirmation), excel.readStringList("Locations").get(1));
+        Assert.assertEquals(getElementText(homepage.staysSearchConfirmation), excel.readStringList("Locations").get(0));
     }
     @Test
     public void testLondonStay() {
@@ -54,7 +54,7 @@ public class TestBookingPage extends Homepage {
             homepage.closePopUp();
         }
 
-        Assert.assertEquals(getElementText(homepage.destinationConfirmation), excel.readStringList("Locations").get(2));
+        Assert.assertEquals(getElementText(homepage.staysSearchConfirmation), excel.readStringList("Locations").get(0));
     }
     @Test
     public void testParisStay() {
@@ -72,7 +72,7 @@ public class TestBookingPage extends Homepage {
             homepage.closePopUp();
         }
 
-        Assert.assertEquals(getElementText(homepage.destinationConfirmation), excel.readStringList("Locations").get(3));
+        Assert.assertEquals(getElementText(homepage.staysSearchConfirmation), excel.readStringList("Locations").get(0));
     }
     @Test
     public void testMadridStay() {
@@ -90,7 +90,7 @@ public class TestBookingPage extends Homepage {
             homepage.closePopUp();
         }
 
-        Assert.assertEquals(getElementText(homepage.destinationConfirmation), excel.readStringList("Locations").get(4));
+        Assert.assertEquals(getElementText(homepage.staysSearchConfirmation), excel.readStringList("Locations").get(0));
     }
     @Test
     public void testMilanStay() {
@@ -108,7 +108,79 @@ public class TestBookingPage extends Homepage {
             homepage.closePopUp();
         }
 
-        Assert.assertEquals(getElementText(homepage.destinationConfirmation), excel.readStringList("Locations").get(5));
+        Assert.assertEquals(getElementText(homepage.staysSearchConfirmation), excel.readStringList("Locations").get(0));
+    }
+    @Test
+    public void testBarcelonaStay() {
+        Homepage homepage = new Homepage();
+        String destination = "Barcelona";
+        homepage.typeInSearchBar(destination);
+        homepage.selectRandomAutoSuggestion();
+        homepage.selectTodaysDate();
+        homepage.selectRandomDayWithin30Days();
+        homepage.selectGuestsBar();
+        homepage.addAnAdult();
+        homepage.addARoom();
+        homepage.clickSubmit();
+        if(homepage.popUp.isDisplayed()){
+            homepage.closePopUp();
+        }
+
+        Assert.assertEquals(getElementText(homepage.staysSearchConfirmation), excel.readStringList("Locations").get(0));
+    }
+    @Test
+    public void testLisbonStay() {
+        Homepage homepage = new Homepage();
+        String destination = "Lisbon";
+        homepage.typeInSearchBar(destination);
+        homepage.selectRandomAutoSuggestion();
+        homepage.selectTodaysDate();
+        homepage.selectRandomDayWithin30Days();
+        homepage.selectGuestsBar();
+        homepage.addAnAdult();
+        homepage.addARoom();
+        homepage.clickSubmit();
+        if(homepage.popUp.isDisplayed()){
+            homepage.closePopUp();
+        }
+
+        Assert.assertEquals(getElementText(homepage.staysSearchConfirmation), excel.readStringList("Locations").get(0));
+    }
+    @Test
+    public void testRomeStay() {
+        Homepage homepage = new Homepage();
+        String destination = "Rome";
+        homepage.typeInSearchBar(destination);
+        homepage.selectRandomAutoSuggestion();
+        homepage.selectTodaysDate();
+        homepage.selectRandomDayWithin30Days();
+        homepage.selectGuestsBar();
+        homepage.addAnAdult();
+        homepage.addARoom();
+        homepage.clickSubmit();
+        if(homepage.popUp.isDisplayed()){
+            homepage.closePopUp();
+        }
+
+        Assert.assertEquals(getElementText(homepage.staysSearchConfirmation), excel.readStringList("Locations").get(0));
+    }
+    @Test
+    public void testBerlinStay() {
+        Homepage homepage = new Homepage();
+        String destination = "Berlin";
+        homepage.typeInSearchBar(destination);
+        homepage.selectRandomAutoSuggestion();
+        homepage.selectTodaysDate();
+        homepage.selectRandomDayWithin30Days();
+        homepage.selectGuestsBar();
+        homepage.addAnAdult();
+        homepage.addARoom();
+        homepage.clickSubmit();
+        if(homepage.popUp.isDisplayed()){
+            homepage.closePopUp();
+        }
+
+        Assert.assertEquals(getElementText(homepage.staysSearchConfirmation), excel.readStringList("Locations").get(0));
     }
 
 }

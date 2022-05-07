@@ -48,8 +48,8 @@ public class Homepage extends BasePage {
     @FindBy(xpath = "//button[@class='sb-searchbox__button ']")
     public WebElement submit;
 
-    @FindBy(xpath = "(//a[@class='fc63351294 a168c6f285 a25b1d9e47'])[3]/span")
-    public WebElement destinationConfirmation;
+    @FindBy(xpath = "//a[@aria-current=\"page\"]//span[@class=\"bui-tab__text\"]")
+    public WebElement staysSearchConfirmation;
 
     @FindBy(xpath = "//div[@class='map_full_overlay__close']")
     public WebElement popUp;

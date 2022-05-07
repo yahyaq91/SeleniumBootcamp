@@ -45,3 +45,35 @@ select location
 select dates
 select number of guests
 submit search query
+
+Test Case #7: Searching for Stays in Barcelona.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #8: Searching for Stays in Lisbon.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #9: Searching for Stays in Rome.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #10: Searching for Stays in Berlin.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
