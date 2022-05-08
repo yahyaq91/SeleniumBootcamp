@@ -1,0 +1,5 @@
+Test Case #1: Test Making Clients Our Priority Video
+Navigate to URL
+Select 'ContactUs'
+Select 'Share your feedback'
+Press 'play' to play video.
