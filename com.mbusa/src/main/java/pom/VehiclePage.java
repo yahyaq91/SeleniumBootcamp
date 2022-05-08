@@ -2,8 +2,10 @@ package pom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import shared.MercedesNavigationPage;
 
@@ -29,6 +31,20 @@ public class VehiclePage extends MercedesNavigationPage {
     }
 
     public void clickExplorePerformance(){clickOnElement(explorePerformance);}
+    public void waitToLoad(){
+        WebElement canvas = driver.findElement(By.xpath("//div[@class='chapter-design__section-wrapper animation-element']"));
+        webDriverWait.until(ExpectedConditions.visibilityOf(canvas));
+    }
+    public void rotateCanvas(int rotate) {
+
+            WebElement canvas = driver.findElement(By.xpath("//div[@class='chapter-design__section-wrapper animation-element']"));
+            WebElement output = driver.findElement(By.xpath("//section[@id='exterior-section']"));
+            Actions act = new Actions(driver);
+            act.clickAndHold(output).perform();
+            act.dragAndDropBy(output, 360, 0).perform();
+            act.release(output).perform();
+
+        }
 
 
 }
