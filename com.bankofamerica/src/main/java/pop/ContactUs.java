@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import shared.Homepage;
 
 public class ContactUs extends Homepage {
@@ -37,6 +38,9 @@ public class ContactUs extends Homepage {
     }
     public void disableFullScreen(){
         clickOnElement(disableFullScreen);
+    }
+    public void playVideoForAmountOfSeconds(String seconds) {
+        fluentWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(String.format("//div[@class='range-slider spa-cinema-ctrl spa-cinema-ctrl--timeline noUi-target noUi-ltr noUi-horizontal']//div[@aria-valuenow='%s']", seconds))));
     }
     public void progressSlider(int progress) {
         if (progress >= 0 && progress <= 100) {

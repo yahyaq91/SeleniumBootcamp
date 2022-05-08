@@ -10,14 +10,12 @@ public class TestContactUsPage extends BasePage {
         Homepage homepage = new Homepage();
         ContactUs contactUs = homepage.clickContactUs();
         contactUs.clickShareFeedback();
-        Thread.sleep(3000);
         contactUs.clickPlayPauseForClientCareVideo();
         contactUs.enableFullScreen();
-        Thread.sleep(10000);
+        contactUs.playVideoForAmountOfSeconds("10");
         contactUs.enableDisableSubtitles();
-        Thread.sleep(20000);
-        contactUs.progressSlider(0);
-        Thread.sleep(3000);
+        contactUs.playVideoForAmountOfSeconds("30");
+        contactUs.progressSlider(10);
         contactUs.disableFullScreen();
 
         Assert.assertTrue(isElementVisible(contactUs.makingClientsPriorityConfirmation));
