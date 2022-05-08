@@ -9,4 +9,10 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://bankofamerica.com"/>
 
+    <test name="Bank Of America - ContactUs">
+        <classes>
+            <class name="TestContactUsPage"/>
+        </classes>
+    </test>
+
 </suite>
