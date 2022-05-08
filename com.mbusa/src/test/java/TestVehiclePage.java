@@ -40,13 +40,16 @@ public class TestVehiclePage extends BasePage {
         Assert.assertEquals(getElementText(vehiclePage.amgPerformanceViewConfirmation), excel.readStringList("AMG").get(1));
     }
     @Test
-    public void test() throws InterruptedException {
+    public void testRotatingAnimation() throws InterruptedException {
         Homepage homepage = new Homepage();
         MercedesNavigationPage mercedesNavigationPage = homepage.navigateMenu("Vehicles");
         VehiclePage vehiclePage = mercedesNavigationPage.navigateVehicleOptions("Mercedes-AMG");
         vehiclePage.clickVideoControl();
         vehiclePage.navigateMedia("05.");
         Thread.sleep(3000);
+        vehiclePage.rotateCanvas(200);
+        vehiclePage.rotateCanvas(200);
+        vehiclePage.rotateCanvas(200);
         vehiclePage.rotateCanvas(200);
     }
 }
