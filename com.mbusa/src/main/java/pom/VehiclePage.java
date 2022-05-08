@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import shared.MercedesNavigationPage;
 
 
@@ -26,6 +27,8 @@ public class VehiclePage extends MercedesNavigationPage {
         driver.findElement(By.xpath(String.format("//div[@class=\"waypoint-nav__container sticky-nav__container\"]" +
                 "//span[contains(text(),'%s')]", options))).click();
     }
-    public void clickExplorePerformance() throws InterruptedException {
-        webDriverWait.wait(3000);clickOnElement(explorePerformance);}
+
+    public void clickExplorePerformance(){clickOnElement(explorePerformance);}
+
+
 }
