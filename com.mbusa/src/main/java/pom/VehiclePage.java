@@ -26,8 +26,6 @@ public class VehiclePage extends MercedesNavigationPage {
         driver.findElement(By.xpath(String.format("//div[@class=\"waypoint-nav__container sticky-nav__container\"]" +
                 "//span[contains(text(),'%s')]", options))).click();
     }
-
-    public void clickExplorePerformance(){clickOnElement(explorePerformance);}
-
-
+    public void clickExplorePerformance() throws InterruptedException {
+        webDriverWait.wait(3000);clickOnElement(explorePerformance);}
 }
