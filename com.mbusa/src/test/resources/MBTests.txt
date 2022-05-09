@@ -9,3 +9,9 @@ Navigate to URL
 Select 'Vehicles'
 Select 'Mercedes-AMG'
 Select '4' in the media player.
+
+Test Case #2: Test Mercedes-AMG Design View.
+Navigate to URL
+Select 'Vehicles'
+Select 'Mercedes-AMG'
+Select '5' in the media player.

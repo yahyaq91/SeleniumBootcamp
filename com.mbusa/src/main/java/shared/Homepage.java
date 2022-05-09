@@ -12,6 +12,8 @@ public class Homepage extends BasePage {
     public WebElement amgEngineViewConfirmation;
     @FindBy(xpath = "//div[@class='specialty-carousel__counter']")
     public WebElement amgPerformanceViewConfirmation;
+    @FindBy(xpath = "//h3[@class='chapter-design__heading animation-element']")
+    public WebElement amgDesignViewConfirmation;
 
     public Homepage(){
         PageFactory.initElements(driver, this);

@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import shared.MercedesNavigationPage;
 
@@ -16,7 +15,10 @@ public class VehiclePage extends MercedesNavigationPage {
     public WebElement videoControl;
     @FindBy(xpath = "//button[@class='specialty-carousel__button specialty-carousel__button--next']")
     public WebElement explorePerformance;
-
+    @FindBy(xpath = "//button[@class='link chapter-design__section-toggle-button']")
+    public WebElement interiorOption;
+    @FindBy(xpath = "//button[@class='specialty-navigation__item-button']")
+    public WebElement performanceDescription;
 
 
     public VehiclePage(){
@@ -32,12 +34,13 @@ public class VehiclePage extends MercedesNavigationPage {
 
     public void clickExplorePerformance(){clickOnElement(explorePerformance);}
     public void waitToLoad(){
-        WebElement canvas = driver.findElement(By.xpath("//div[@class='chapter-design__section-wrapper animation-element']"));
-        webDriverWait.until(ExpectedConditions.visibilityOf(canvas));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(interiorOption));
+    }
+    public void waitForTextToLoad(){
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(performanceDescription));
     }
     public void rotateCanvas(int rotate) {
 
-            WebElement canvas = driver.findElement(By.xpath("//div[@class='chapter-design__section-wrapper animation-element']"));
             WebElement output = driver.findElement(By.xpath("//section[@id='exterior-section']"));
             Actions act = new Actions(driver);
             act.clickAndHold(output).perform();
@@ -45,6 +48,4 @@ public class VehiclePage extends MercedesNavigationPage {
             act.release(output).perform();
 
         }
-
-
 }

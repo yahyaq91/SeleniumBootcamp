@@ -46,10 +46,13 @@ public class TestVehiclePage extends BasePage {
         VehiclePage vehiclePage = mercedesNavigationPage.navigateVehicleOptions("Mercedes-AMG");
         vehiclePage.clickVideoControl();
         vehiclePage.navigateMedia("05.");
-        Thread.sleep(3000);
+        vehiclePage.waitToLoad();
         vehiclePage.rotateCanvas(200);
         vehiclePage.rotateCanvas(200);
         vehiclePage.rotateCanvas(200);
         vehiclePage.rotateCanvas(200);
+
+        Assert.assertTrue(isElementVisible(vehiclePage.amgDesignViewConfirmation));
+        Assert.assertEquals(getElementText(vehiclePage.amgDesignViewConfirmation), excel.readStringList("AMG").get(2));
     }
 }
