@@ -106,5 +106,27 @@ public class TestLocatingSoccerTeams extends BasePage {
         Assert.assertTrue(isElementVisible(soccerPage.teamSelectionConfirmation));
         Assert.assertEquals(getElementText(homepage.teamSelectionConfirmation), excel.readStringList("SoccerPage").get(8));
     }
+    @Test
+    public void testLocatingArsenal(){
+        Homepage homepage = new Homepage();
+        SoccerPage soccerPage = homepage.clickSoccerTab();
+        soccerPage.clickTeamsButton();
+        soccerPage.hoverTeams();
+        soccerPage.teamSelection("Arsenal");
+
+        Assert.assertTrue(isElementVisible(soccerPage.teamSelectionConfirmation));
+        Assert.assertEquals(getElementText(homepage.teamSelectionConfirmation), excel.readStringList("SoccerPage").get(9));
+    }
+    @Test
+    public void testLocatingTottenhamHotspur(){
+        Homepage homepage = new Homepage();
+        SoccerPage soccerPage = homepage.clickSoccerTab();
+        soccerPage.clickTeamsButton();
+        soccerPage.hoverTeams();
+        soccerPage.teamSelection("Tottenham Hotspur");
+
+        Assert.assertTrue(isElementVisible(soccerPage.teamSelectionConfirmation));
+        Assert.assertEquals(getElementText(homepage.teamSelectionConfirmation), excel.readStringList("SoccerPage").get(10));
+    }
 
 }

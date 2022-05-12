@@ -8,6 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import shared.MercedesNavigationPage;
 
+import java.time.Duration;
+
+import static java.time.Duration.*;
+
 
 public class VehiclePage extends MercedesNavigationPage {
 
@@ -31,13 +35,9 @@ public class VehiclePage extends MercedesNavigationPage {
         driver.findElement(By.xpath(String.format("//div[@class=\"waypoint-nav__container sticky-nav__container\"]" +
                 "//span[contains(text(),'%s')]", options))).click();
     }
-
     public void clickExplorePerformance(){clickOnElement(explorePerformance);}
     public void waitToLoad(){
         webDriverWait.until(ExpectedConditions.elementToBeClickable(interiorOption));
-    }
-    public void waitForTextToLoad(){
-        webDriverWait.until(ExpectedConditions.elementToBeClickable(performanceDescription));
     }
     public void rotateCanvas(int rotate) {
 

@@ -1,5 +1,6 @@
 package app.shared;
 
+import app.pom.MMAPage;
 import app.pom.SoccerPage;
 import base.BasePage;
 import org.openqa.selenium.WebElement;
@@ -11,11 +12,17 @@ public class Homepage extends BasePage {
     @FindBy(xpath = "//li[@class='sports menu-soccer']")
     public WebElement soccerTab;
 
+    @FindBy(xpath = "//li[@class='sports menu-mma']")
+    public WebElement mmaTab;
+
     @FindBy(xpath = "//h1[@class='ClubhouseHeader__Name ttu flex items-start n2']")
     public WebElement teamSelectionConfirmation;
 
     @FindBy(xpath = "//h1[@class='headline headline__h1 dib']")
     public WebElement teamInfoSelectionConfirmation;
+
+    @FindBy(xpath = "//header[@class='article-header']")
+    public WebElement championsPageConfirmation;
     
 
     public Homepage() {
@@ -26,5 +33,10 @@ public class Homepage extends BasePage {
         clickOnElement(soccerTab);
 
         return new SoccerPage();
+    }
+    public MMAPage clickMMATab(){
+        clickOnElement(mmaTab);
+
+        return new MMAPage();
     }
 }

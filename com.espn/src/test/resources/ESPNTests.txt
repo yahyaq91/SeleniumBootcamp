@@ -111,3 +111,74 @@ Click 'Teams' in the options available under soccer
 Once teams page loads hover over the 'Teams' tab
 Select Real Madrid
 Select Transfers
+
+Test Case #16: Find Arsenal ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Arsenal
+
+Test Case #17: Find Tottenham Hotspur ESPN page.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select Tottenham Hotspur
+
+Test Case #18: Obtaining PSG Stats On Performance.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select PSG
+Select Stats
+Select Performance
+
+Test Case #19: Obtaining PSG Stats On Discipline.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select PSG
+Select Stats
+Select Discipline
+
+Test Case #20: Obtaining PSG Stats On Scoring.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select PSG
+Select Stats
+Select Scoring
+
+Test Case #21: Obtaining PSG Results.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select PSG
+Select Results
+
+Test Case #22: Obtaining PSG Squad List.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select PSG
+Select Squad
+
+Test Case #23: Obtaining PSG Transfers.
+Navigate to URL
+Click 'Soccer'
+Click 'Teams' in the options available under soccer
+Once teams page loads hover over the 'Teams' tab
+Select PSG
+Select Transfers
+
+Test Case #24: Test Locating Current Champions.
+Navigate to URL
+Click 'MMA'
+Click 'Home'
+Click 'Champions'

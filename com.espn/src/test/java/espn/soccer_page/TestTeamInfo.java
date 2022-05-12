@@ -88,4 +88,85 @@ public class TestTeamInfo extends BasePage {
         Assert.assertTrue(isElementVisible(soccerPage.teamInfoSelectionConfirmation));
         Assert.assertEquals(getElementText(homepage.teamInfoSelectionConfirmation), excel.readStringList("TeamInfo").get(5));
     }
+    @Test
+    public void testObtainingPSGTeamInfoOnPerformance(){
+        Homepage homepage = new Homepage();
+        SoccerPage soccerPage = homepage.clickSoccerTab();
+        soccerPage.clickTeamsButton();
+        soccerPage.hoverTeams();
+        soccerPage.teamSelection("PSG");
+        soccerPage.navigationOptions("Stats");
+        soccerPage.selectStatsCriteria("Performance");
+
+
+        Assert.assertTrue(isElementVisible(soccerPage.teamInfoSelectionConfirmation));
+        Assert.assertEquals(getElementText(homepage.teamInfoSelectionConfirmation), excel.readStringList("TeamInfo").get(6));
+    }
+    @Test
+    public void testObtainingPSGTeamInfoOnDiscipline(){
+        Homepage homepage = new Homepage();
+        SoccerPage soccerPage = homepage.clickSoccerTab();
+        soccerPage.clickTeamsButton();
+        soccerPage.hoverTeams();
+        soccerPage.teamSelection("PSG");
+        soccerPage.navigationOptions("Stats");
+        soccerPage.selectStatsCriteria("Discipline");
+
+
+        Assert.assertTrue(isElementVisible(soccerPage.teamInfoSelectionConfirmation));
+        Assert.assertEquals(getElementText(homepage.teamInfoSelectionConfirmation), excel.readStringList("TeamInfo").get(7));
+    }
+    @Test
+    public void testObtainingPSGTeamInfoOnScoring(){
+        Homepage homepage = new Homepage();
+        SoccerPage soccerPage = homepage.clickSoccerTab();
+        soccerPage.clickTeamsButton();
+        soccerPage.hoverTeams();
+        soccerPage.teamSelection("PSG");
+        soccerPage.navigationOptions("Stats");
+        soccerPage.selectStatsCriteria("Scoring");
+
+
+        Assert.assertTrue(isElementVisible(soccerPage.teamInfoSelectionConfirmation));
+        Assert.assertEquals(getElementText(homepage.teamInfoSelectionConfirmation), excel.readStringList("TeamInfo").get(8));
+    }
+    @Test
+    public void testObtainingPSGResults(){
+        Homepage homepage = new Homepage();
+        SoccerPage soccerPage = homepage.clickSoccerTab();
+        soccerPage.clickTeamsButton();
+        soccerPage.hoverTeams();
+        soccerPage.teamSelection("PSG");
+        soccerPage.navigationOptions("Results");
+
+
+        Assert.assertTrue(isElementVisible(soccerPage.teamInfoSelectionConfirmation));
+        Assert.assertEquals(getElementText(homepage.teamInfoSelectionConfirmation), excel.readStringList("TeamInfo").get(9));
+    }
+    @Test
+    public void testObtainingPSGSquadList(){
+        Homepage homepage = new Homepage();
+        SoccerPage soccerPage = homepage.clickSoccerTab();
+        soccerPage.clickTeamsButton();
+        soccerPage.hoverTeams();
+        soccerPage.teamSelection("PSG");
+        soccerPage.navigationOptions("Squad");
+
+
+        Assert.assertTrue(isElementVisible(soccerPage.teamInfoSelectionConfirmation));
+        Assert.assertEquals(getElementText(homepage.teamInfoSelectionConfirmation), excel.readStringList("TeamInfo").get(10));
+    }
+    @Test
+    public void testObtainingPSGTransfers(){
+        Homepage homepage = new Homepage();
+        SoccerPage soccerPage = homepage.clickSoccerTab();
+        soccerPage.clickTeamsButton();
+        soccerPage.hoverTeams();
+        soccerPage.teamSelection("PSG");
+        soccerPage.navigationOptions("Transfers");
+
+
+        Assert.assertTrue(isElementVisible(soccerPage.teamInfoSelectionConfirmation));
+        Assert.assertEquals(getElementText(homepage.teamInfoSelectionConfirmation), excel.readStringList("TeamInfo").get(11));
+    }
 }
