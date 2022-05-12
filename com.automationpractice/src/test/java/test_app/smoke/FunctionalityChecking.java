@@ -21,13 +21,13 @@ public class FunctionalityChecking extends TestBasePage {
 
     }
     @Test
-    public void testSearchForLocalStore(){
+    public void testingSearchForLocalStore(){
         Homepage homepage = new Homepage();
 
         ItemVewPage itemVewPage = homepage.clickWomenOption();
         itemVewPage.clickDiscoverStoreButton();
-        itemVewPage.enterSearchData("10029");
-        itemVewPage.selectRadius(2);
+        itemVewPage.enterSearchData("22204");
+        itemVewPage.selectRadius(1);
         itemVewPage.clickSearchButton();
 
         Assert.assertTrue(isElementVisible(itemVewPage.locatorConfirmation));
