@@ -79,7 +79,7 @@ public class BasePage {
     @Parameters({"driverConfigEnabled", "browser", "url"})
     @BeforeMethod
     public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser,
-                            @Optional("https://www.redfin.com/") String url) {
+                            @Optional("https://www.bmwusa.com/") String url) {
         if (Boolean.parseBoolean(driverConfigEnabled)) {
             driverInit(browser);
             driver.get(url);
