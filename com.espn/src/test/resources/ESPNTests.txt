@@ -182,3 +182,213 @@ Navigate to URL
 Click 'MMA'
 Click 'Home'
 Click 'Champions'
+
+Test Case #25: Navigate to Atlanta Hawks
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Atlanta Hawks team
+
+Test Case #26: Navigate to Boston Celtics
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Boston Celtics team
+
+Test Case #27: Navigate to Brooklyn Nets
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Brooklyn Nets team
+
+Test Case #28: Navigate to Charlotte Hornets
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Charlotte Hornets team
+
+Test Case #29: Navigate to Chicago Bulls
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Chicago Bulls team
+
+Test Case #30: Navigate to Cleveland Cavaliers
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Cleveland Cavaliers team
+
+Test Case #31: Navigate to Dallas Mavericks
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Dallas Mavericks team
+
+Test Case #32: Navigate to Denver Nuggets
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Denver Nuggets team
+
+Test Case #33: Navigate to Detroit Pistons
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Detroit Pistons team
+
+Test Case #34: Navigate to Golden State Warriors
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Golden State Warriors team
+
+Test Case #35: Navigate to Houston Rockets
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Houston Rockets team
+
+Test Case #36: Navigate to Indiana Pacers
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Indiana Pacers team
+
+Test Case #37: Navigate to LA Clippers
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click LA Clippers team
+
+Test Case #38: Navigate to Los Angeles Lakers
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Los Angeles Lakers team
+
+Test Case #39: Navigate to Memphis Grizzlies
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Memphis Grizzlies team
+
+Test Case #40: Navigate to Miami Heat
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Miami Heat team
+
+Test Case #41: Navigate to Milwaukee Bucks
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Milwaukee Bucks team
+
+Test Case #42: Navigate to Minnesota Timberwolves
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Minnesota Timberwolves team
+
+Test Case #43: Navigate to New Orleans Pelicans
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click New Orleans Pelicans team
+
+Test Case #44: Navigate to New York Knicks
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click New York Knicks team
+
+Test Case #45: Navigate to Oklahoma City Thunder
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Oklahoma City Thunder team
+
+Test Case #46: Navigate to Orlando Magic
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Orlando Magic team
+
+Test Case #47: Navigate to Philadelphia 76ers
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Philadelphia 76ers team
+
+Test Case #48: Navigate to Phoenix Suns
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Phoenix Suns team
+
+Test Case #49: Navigate to Portland Trail Blazers
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Portland Trail Blazers team
+
+Test Case #50: Navigate to Sacramento Kings
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Sacramento Kings team
+
+Test Case #51: Navigate to San Antonio Spurs
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click San Antonio Spurs team
+
+Test Case #52: Navigate to Toronto Raptors
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Toronto Raptors team
+
+Test Case #53: Navigate to Utah Jazz
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Utah Jazz team
+
+Test Case #54: Navigate to Washington Wizards
+Navigate to URL
+Click 'NBA'
+Click 'Teams' button
+Hover over NBA 'Teams' drop down menu
+Click Washington Wizards team

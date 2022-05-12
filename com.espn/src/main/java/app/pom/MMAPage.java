@@ -13,6 +13,7 @@ public class MMAPage extends Homepage {
     @FindBy(xpath = "//li//a[@name='&lpos=subnav+subnav_mma_champions']")
     public WebElement championsPage;
 
+
     public MMAPage(){
         PageFactory.initElements(driver, this);
     }
@@ -22,4 +23,5 @@ public class MMAPage extends Homepage {
     public void clickChampions(){
         clickOnElement(championsPage);
     }
+
 }

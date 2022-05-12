@@ -21,5 +21,17 @@
         </classes>
     </test>
 
+    <test name="MMA">
+        <classes>
+            <class name="espn.mma.TestMMAPage"/>
+        </classes>
+    </test>
+
+    <test name="NBA">
+        <classes>
+            <class name="espn.nba_page.TestNBAPage"/>
+        </classes>
+    </test>
+
 
 </suite>
