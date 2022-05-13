@@ -76,3 +76,24 @@ Select 'Shop'
 Select 'Accessories'
 Select 'Shop All Accessories'
 Select 'Keyboards' under tablet section
+
+Test Case #13: Test Search For Tablet Verizon Cases
+Navigate to URL
+Select 'Shop'
+Select 'Accessories'
+Select 'Shop All Accessories'
+Select 'Verizon Cases' under tablet section
+
+Test Case #14: Test Search For Phone Verizon Cases
+Navigate to URL
+Select 'Shop'
+Select 'Accessories'
+Select 'Shop All Accessories'
+Select 'Verizon Cases' under phone section
+
+Test Case #15: Test Search For Phone Case Bundles
+Navigate to URL
+Select 'Shop'
+Select 'Accessories'
+Select 'Shop All Accessories'
+Select 'Case Bundles' under phone section

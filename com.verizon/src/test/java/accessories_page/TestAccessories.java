@@ -98,4 +98,41 @@ public class TestAccessories extends Homepage {
         Assert.assertEquals(getElementText(ap.tabletAccessoriesSearchConfirmation),
                 excel.readStringList("Accessories").get(3));
     }
+    @Test
+    public void testSearchForTabletVerizonCases() {
+        Homepage homepage = new Homepage();
+        homepage.clickAccessoriesLink();
+        AccessoriesPage ap = new AccessoriesPage();
+        ap.clickTabletAccessoriesColumnCategory("Verizon Cases");
+        TabletAccessories tabletAccessories = new TabletAccessories();
+        tabletAccessories.findCheapestPrice();
+
+        Assert.assertTrue(isElementVisible(ap.caseSearchConfirmation));
+        Assert.assertEquals(getElementText(ap.caseSearchConfirmation),
+                excel.readStringList("Accessories").get(0));
+    }
+    @Test
+    public void testSearchForPhoneVerizonCases() {
+        Homepage homepage = new Homepage();
+        homepage.clickAccessoriesLink();
+        AccessoriesPage ap = new AccessoriesPage();
+        ap.clickPhoneAccessoriesColumnCategory("Verizon Cases");
+        PhoneAccessories phoneAccessories = new PhoneAccessories();
+        phoneAccessories.findCheapestPrice();
+
+        Assert.assertTrue(isElementVisible(ap.caseSearchConfirmation));
+        Assert.assertEquals(getElementText(ap.caseSearchConfirmation), excel.readStringList("Accessories").get(0));
+    }
+    @Test
+    public void testSearchForPhoneCaseBundles() {
+        Homepage homepage = new Homepage();
+        homepage.clickAccessoriesLink();
+        AccessoriesPage ap = new AccessoriesPage();
+        ap.clickPhoneAccessoriesColumnCategory("Case Bundles");
+        PhoneAccessories phoneAccessories = new PhoneAccessories();
+        phoneAccessories.findCheapestPrice();
+
+        Assert.assertTrue(isElementVisible(ap.caseBundleConfirmation));
+        Assert.assertEquals(getElementText(ap.caseBundleConfirmation), excel.readStringList("Accessories").get(4));
+    }
 }

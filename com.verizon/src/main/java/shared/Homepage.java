@@ -23,6 +23,9 @@ public class Homepage extends BasePage {
     @FindBy(xpath = "//a[@href='https://www.verizon.com/products/ipad-cases/']")
     public WebElement tabletCaseSearchConfirmation;
 
+    @FindBy(xpath = "//a[@href='https://www.verizon.com/products/cases-and-protection/']")
+    public WebElement caseBundleConfirmation;
+
     @FindBy(xpath = "//a[@href='https://www.verizon.com/products/tablet-accessories/']")
     public WebElement tabletAccessoriesSearchConfirmation;
 
