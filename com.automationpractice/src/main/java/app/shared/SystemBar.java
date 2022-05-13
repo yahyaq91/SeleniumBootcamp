@@ -28,9 +28,14 @@ public class SystemBar extends BasePage {
 
     @FindBy(xpath = "//p[@class='alert alert-success']")
     public WebElement newsletterRegistrationConfirmation;
+    @FindBy(xpath = "//h1[@class='page-heading']")
+    public WebElement addressConfirmation;
 
     @FindBy(xpath = "//h1[@class='page-heading product-listing']")
     public WebElement specialsConfirmation;
+
+    @FindBy(xpath = "//h1[@class='page-heading']")
+    public WebElement wishlistConfirmation;
 
 
     public SystemBar() {
