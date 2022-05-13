@@ -4,10 +4,7 @@ import base.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import pom.AsiaMarket;
-import pom.EuropeMarket;
-import pom.FXMarket;
-import pom.UnitedStatesMarket;
+import pom.*;
 
 public class Homepage extends BasePage {
 
@@ -22,6 +19,15 @@ public class Homepage extends BasePage {
 
     @FindBy(xpath = "//a[@href='https://www.marketwatch.com/investing/currencies']")
     public WebElement fxMarket;
+
+    @FindBy(xpath = "//a[@href='https://www.marketwatch.com/investing/bonds']")
+    public WebElement ratesMarket;
+
+    @FindBy(xpath = "//a[@href='https://www.marketwatch.com/investing/futures']")
+    public WebElement futuresMarket;
+
+    @FindBy(xpath = "//a[@href='https://www.marketwatch.com/investing/cryptocurrency']")
+    public WebElement cryptoMarket;
 
     @FindBy(xpath = "//button[@class='close-btn']")
     public WebElement popUP;
@@ -51,6 +57,21 @@ public class Homepage extends BasePage {
         clickOnElement(popUP);
 
         return new FXMarket();
+    }
+    public RatesMarket closePopUpToViewRatesMarket(){
+        clickOnElement(popUP);
+
+        return new RatesMarket();
+    }
+    public FuturesMarket closePopUpToViewFuturesMarket(){
+        clickOnElement(popUP);
+
+        return new FuturesMarket();
+    }
+    public CryptoMarket closePopUpToViewCryptoMarket(){
+        clickOnElement(popUP);
+
+        return new CryptoMarket();
     }
 
 }

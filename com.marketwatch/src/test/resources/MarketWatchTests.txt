@@ -148,3 +148,111 @@ Navigate to URL
 Close pop-up
 Select 'FX Market'
 Select WSJ $ Idx.
+
+Test Case #25: Test US 10Yr Rates
+Navigate to URL
+Close pop-up
+Select 'Rates Market'
+Select US 10Yr Rates
+
+Test Case #26: Test Germany 10yr Rates
+Navigate to URL
+Close pop-up
+Select 'Rates Market'
+Select Germany 10yr Rates
+
+Test Case #27: Test Italy 10yr Rates
+Navigate to URL
+Close pop-up
+Select 'Rates Market'
+Select Italy 10yr Rates
+
+Test Case #28: Test Spain 10yr Rates
+Navigate to URL
+Close pop-up
+Select 'Rates Market'
+Select Spain 10yr Rates
+
+Test Case #29: Test UK 10yr Rates
+Navigate to URL
+Close pop-up
+Select 'Rates Market'
+Select UK 10yr Rates
+
+Test Case #30: Test Japan 10yr Rates
+Navigate to URL
+Close pop-up
+Select 'Rates Market'
+Select Japan 10yr Rates
+
+Test Case #31: Test DJIA F Rates
+Navigate to URL
+Close pop-up
+Select 'Futures Market'
+Select DJIA F Rates
+
+Test Case #32: Test S&P F Rates
+Navigate to URL
+Close pop-up
+Select 'Futures Market'
+Select S&P F Rates
+
+Test Case #33: Test NASDAQ F Rates
+Navigate to URL
+Close pop-up
+Select 'Futures Market'
+Select NASDAQ FRates
+
+Test Case #34: Test Gold Rates
+Navigate to URL
+Close pop-up
+Select 'Futures Market'
+Select Gold Rates
+
+Test Case #35: Test Silver Rates
+Navigate to URL
+Close pop-up
+Select 'Futures Market'
+Select Silver Rates
+
+Test Case #36: Test Crude Oil Rates
+Navigate to URL
+Close pop-up
+Select 'Futures Market'
+Select Crude Oil Rates
+
+Test Case #37: Test Bitcoin USD Rates
+Navigate to URL
+Close pop-up
+Select 'Crypto Market'
+Select Bitcoin USD Rates
+
+Test Case #38: Test Ethereum USD Rates
+Navigate to URL
+Close pop-up
+Select 'Crypto Market'
+Select Ethereum USD Rates
+
+Test Case #39: Test XRP USD Rates
+Navigate to URL
+Close pop-up
+Select 'Crypto Market'
+Select XRP USD Rates
+
+Test Case #40: Test Bitcoin Cash USD Rates
+Navigate to URL
+Close pop-up
+Select 'Crypto Market'
+Select Bitcoin Cash USD Rates
+
+Test Case #41: Test Litecoin USD Rates
+Navigate to URL
+Close pop-up
+Select 'Crypto Market'
+Select Litecoin USD Rates
+
+Test Case #42: Test Monero USD Rates
+Navigate to URL
+Close pop-up
+Select 'Crypto Market'
+Select Monero USD Rates

@@ -29,5 +29,20 @@
             <class name="TestFXMarketPage"/>
         </classes>
     </test>
+    <test name="MarketWatch - RateMarket">
+        <classes>
+            <class name="TestRatesMarket"/>
+        </classes>
+    </test>
+    <test name="MarketWatch - FuturesMarket">
+        <classes>
+            <class name="TestFuturesMarket"/>
+        </classes>
+    </test>
+    <test name="MarketWatch - CryptoMarket">
+        <classes>
+            <class name="TestCryptoMarketPage"/>
+        </classes>
+    </test>
 
 </suite>
