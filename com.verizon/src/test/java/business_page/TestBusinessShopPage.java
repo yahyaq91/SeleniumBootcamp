@@ -6,13 +6,16 @@ import org.testng.annotations.Test;
 import pom.BusinessPage;
 import shared.Homepage;
 
+import java.time.Duration;
+
 public class TestBusinessShopPage extends BasePage {
     @Test
     public void testBusinessSmartPhonesAllBrands() {
         Homepage homepage = new Homepage();
         BusinessPage businessPage = homepage.clickOnBusinessPage();
-        businessPage.hoverShopButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         businessPage.clickShopButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         businessPage.waitForPageToLoad();
         businessPage.selectBrand("All");
 
@@ -24,8 +27,9 @@ public class TestBusinessShopPage extends BasePage {
     public void testBusinessSmartPhonesAppleBrands() {
         Homepage homepage = new Homepage();
         BusinessPage businessPage = homepage.clickOnBusinessPage();
-        businessPage.hoverShopButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         businessPage.clickShopButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         businessPage.waitForPageToLoad();
         businessPage.selectBrand("Apple");
 
@@ -37,8 +41,9 @@ public class TestBusinessShopPage extends BasePage {
     public void testBusinessSmartPhonesSamsungBrands() {
         Homepage homepage = new Homepage();
         BusinessPage businessPage = homepage.clickOnBusinessPage();
-        businessPage.hoverShopButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         businessPage.clickShopButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         businessPage.waitForPageToLoad();
         businessPage.selectBrand("Samsung");
 
@@ -50,8 +55,9 @@ public class TestBusinessShopPage extends BasePage {
     public void testBusinessSmartPhonesMotorolaBrands() {
         Homepage homepage = new Homepage();
         BusinessPage businessPage = homepage.clickOnBusinessPage();
-        businessPage.hoverShopButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         businessPage.clickShopButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         businessPage.waitForPageToLoad();
         businessPage.selectBrand("Motorola");
 
@@ -63,8 +69,9 @@ public class TestBusinessShopPage extends BasePage {
     public void testBusinessSmartPhonesGoogleBrands() {
         Homepage homepage = new Homepage();
         BusinessPage businessPage = homepage.clickOnBusinessPage();
-        businessPage.hoverShopButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         businessPage.clickShopButton();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         businessPage.waitForPageToLoad();
         businessPage.selectBrand("Google");
 
