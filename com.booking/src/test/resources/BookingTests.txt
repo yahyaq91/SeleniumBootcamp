@@ -70,7 +70,47 @@ select dates
 select number of guests
 submit search query
 
-Test Case #10: Searching for Stays in Berlin.
+Test Case #10: Searching for Stays in Manchester.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #11: Searching for Stays in Newcastle.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #12: Searching for Stays in Sydney.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #13: Searching for Stays in Perth.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #14: Searching for Stays in Liverpool.
+Navigate to URL
+Enter destination
+select location
+select dates
+select number of guests
+submit search query
+
+Test Case #15: Searching for Stays in Berlin.
 Navigate to URL
 Enter destination
 select location
