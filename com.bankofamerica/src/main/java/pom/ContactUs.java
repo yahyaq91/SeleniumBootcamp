@@ -1,4 +1,4 @@
-package pop;
+package pom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

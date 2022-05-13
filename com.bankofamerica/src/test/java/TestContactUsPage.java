@@ -1,7 +1,7 @@
 import base.BasePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pop.ContactUs;
+import pom.ContactUs;
 import shared.Homepage;
 
 public class TestContactUsPage extends BasePage {
