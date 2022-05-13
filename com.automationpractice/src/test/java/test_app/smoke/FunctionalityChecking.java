@@ -18,7 +18,7 @@ public class FunctionalityChecking extends TestBasePage {
         itemVewPage.selectYellowOption();
 
         Assert.assertTrue(isElementVisible(itemVewPage.filterConfirmation));
-
+        Assert.assertEquals(getElementText(itemVewPage.filterConfirmation), excel.readStringList("FilteringByColor").get(3));
     }
     @Test
     public void testingSearchForLocalStore(){
@@ -31,6 +31,7 @@ public class FunctionalityChecking extends TestBasePage {
         itemVewPage.clickSearchButton();
 
         Assert.assertTrue(isElementVisible(itemVewPage.locatorConfirmation));
+        Assert.assertEquals(getElementText(itemVewPage.addedToCartConfirmation), excel.readStringList("AddingToCart").get(0));
     }
     @Test
     public void testSearchForSpecials(){
@@ -54,6 +55,8 @@ public class FunctionalityChecking extends TestBasePage {
         itemVewPage.pressAddToCartButton();
 
         Assert.assertTrue(isElementVisible(itemVewPage.addedToCartConfirmation));
+        //Assert.assertEquals(getElementText(itemVewPage.addedToCartConfirmation), excel.readStringList("AddingToCart").get(0));
+
 
     }
     @Test

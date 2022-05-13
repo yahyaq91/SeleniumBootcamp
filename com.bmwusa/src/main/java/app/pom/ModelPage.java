@@ -1,17 +1,17 @@
+
 package app.pom;
 
-import base.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import app.pom.Homepage;
 
-public class ModelPage extends BasePage {
+public class ModelPage extends Homepage {
 
     @FindBy(xpath = "//a[@aria-label='Shop Inventory']//span[contains(text(), 'Shop Inventory')]")
     public WebElement shopInventoryButton;
 
-    //    @FindBy(xpath = "//div[@id='animation-container-4635cb6f-762b-4af0-96e7-7314af92630c']")
     @FindBy(xpath = "(//div[@data-animation='fade'])[2]")
     public WebElement modelTextAnimation;
 
@@ -20,7 +20,6 @@ public class ModelPage extends BasePage {
     }
 
     public void waitForShopInventoryButton() {
-//        webDriverWait.until(ExpectedConditions.visibilityOf(shopInventoryButton));
         webDriverWait.until(ExpectedConditions.elementToBeClickable(shopInventoryButton));
     }
 
@@ -28,3 +27,4 @@ public class ModelPage extends BasePage {
         webDriverWait.until(ExpectedConditions.visibilityOf(modelTextAnimation));
     }
 }
+
