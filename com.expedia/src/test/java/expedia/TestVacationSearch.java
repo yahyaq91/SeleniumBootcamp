@@ -107,4 +107,84 @@ public class TestVacationSearch extends BasePage {
 
         Assert.assertTrue(actualResult.contains(expectedResult));
     }
+    @Test
+    public void testTripToMilan() {
+        Homepage homepage = new Homepage();
+        homepage.refreshPage();
+
+
+        homepage.selectRandomDestinationResultItem("Milan");
+        homepage.selectCurrentCheckInDate();
+        homepage.selectCheckOutDateWithinTwoWeeks();
+        homepage.applyChanges();
+
+        String actualResult = homepage.mapHeaderText.getText();
+        String expectedResult = excel.readStringList("Flights").get(6);
+
+        Assert.assertTrue(actualResult.contains(expectedResult));
+    }
+    @Test
+    public void testTripToMadrid() {
+        Homepage homepage = new Homepage();
+        homepage.refreshPage();
+
+
+        homepage.selectRandomDestinationResultItem("Madrid");
+        homepage.selectCurrentCheckInDate();
+        homepage.selectCheckOutDateWithinTwoWeeks();
+        homepage.applyChanges();
+
+        String actualResult = homepage.mapHeaderText.getText();
+        String expectedResult = excel.readStringList("Flights").get(7);
+
+        Assert.assertTrue(actualResult.contains(expectedResult));
+    }
+    @Test
+    public void testTripToBarcelona() {
+        Homepage homepage = new Homepage();
+        homepage.refreshPage();
+
+
+        homepage.selectRandomDestinationResultItem("Barcelona");
+        homepage.selectCurrentCheckInDate();
+        homepage.selectCheckOutDateWithinTwoWeeks();
+        homepage.applyChanges();
+
+        String actualResult = homepage.mapHeaderText.getText();
+        String expectedResult = excel.readStringList("Flights").get(8);
+
+        Assert.assertTrue(actualResult.contains(expectedResult));
+    }
+    @Test
+    public void testTripToSydney() {
+        Homepage homepage = new Homepage();
+        homepage.refreshPage();
+
+
+        homepage.selectRandomDestinationResultItem("Sydney");
+        homepage.selectCurrentCheckInDate();
+        homepage.selectCheckOutDateWithinTwoWeeks();
+        homepage.applyChanges();
+
+        String actualResult = homepage.mapHeaderText.getText();
+        String expectedResult = excel.readStringList("Flights").get(9);
+
+        Assert.assertTrue(actualResult.contains(expectedResult));
+    }
+    @Test
+    public void testTripToNewcastle() {
+        Homepage homepage = new Homepage();
+        homepage.refreshPage();
+
+
+        homepage.selectRandomDestinationResultItem("Newcastle");
+        homepage.selectCurrentCheckInDate();
+        homepage.selectCheckOutDateWithinTwoWeeks();
+        homepage.applyChanges();
+
+        String actualResult = homepage.mapHeaderText.getText();
+        String expectedResult = excel.readStringList("Flights").get(10);
+
+        Assert.assertTrue(actualResult.contains(expectedResult));
+    }
 }
