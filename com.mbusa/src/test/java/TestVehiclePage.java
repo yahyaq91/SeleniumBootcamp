@@ -5,11 +5,14 @@ import pom.VehiclePage;
 import shared.Homepage;
 import shared.MercedesNavigationPage;
 
+import java.time.Duration;
+
 public class TestVehiclePage extends BasePage {
     @Test
     public void testMercedesAMGEngineView() {
         Homepage homepage = new Homepage();
         MercedesNavigationPage mercedesNavigationPage = homepage.navigateMenu("Vehicles");
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         VehiclePage vehiclePage = mercedesNavigationPage.navigateVehicleOptions("Mercedes-AMG");
         vehiclePage.clickVideoControl();
         vehiclePage.navigateMedia("03.");
@@ -18,31 +21,28 @@ public class TestVehiclePage extends BasePage {
         Assert.assertEquals(getElementText(vehiclePage.amgEngineViewConfirmation), excel.readStringList("AMG").get(0));
     }
     @Test
-    public void testMercedesAMGPerformanceView() throws InterruptedException {
+    public void testMercedesAMGPerformanceView() {
         Homepage homepage = new Homepage();
         MercedesNavigationPage mercedesNavigationPage = homepage.navigateMenu("Vehicles");
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         VehiclePage vehiclePage = mercedesNavigationPage.navigateVehicleOptions("Mercedes-AMG");
         vehiclePage.clickVideoControl();
         vehiclePage.navigateMedia("04.");
-        Thread.sleep(5000);
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         vehiclePage.clickExplorePerformance();
-        Thread.sleep(5000);
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         vehiclePage.clickExplorePerformance();
-        Thread.sleep(5000);
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         vehiclePage.clickExplorePerformance();
-        Thread.sleep(5000);
-        vehiclePage.clickExplorePerformance();
-        Thread.sleep(5000);
-        vehiclePage.clickExplorePerformance();
-        Thread.sleep(5000);
 
         Assert.assertTrue(isElementVisible(vehiclePage.amgPerformanceViewConfirmation));
         Assert.assertEquals(getElementText(vehiclePage.amgPerformanceViewConfirmation), excel.readStringList("AMG").get(1));
     }
     @Test
-    public void testRotatingAnimation() throws InterruptedException {
+    public void testRotatingAnimation() {
         Homepage homepage = new Homepage();
         MercedesNavigationPage mercedesNavigationPage = homepage.navigateMenu("Vehicles");
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         VehiclePage vehiclePage = mercedesNavigationPage.navigateVehicleOptions("Mercedes-AMG");
         vehiclePage.clickVideoControl();
         vehiclePage.navigateMedia("05.");

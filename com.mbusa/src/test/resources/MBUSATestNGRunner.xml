@@ -14,5 +14,15 @@
             <class name="TestVehiclePage"/>
         </classes>
     </test>
+    <test name="Shopping Page">
+        <classes>
+            <class name="TestShoppingPage"/>
+        </classes>
+    </test>
+    <test name="Inventory Page">
+        <classes>
+            <class name="TestInventoryPage"/>
+        </classes>
+    </test>
 
 </suite>

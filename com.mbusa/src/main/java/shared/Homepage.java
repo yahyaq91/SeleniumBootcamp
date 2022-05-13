@@ -14,6 +14,21 @@ public class Homepage extends BasePage {
     public WebElement amgPerformanceViewConfirmation;
     @FindBy(xpath = "//h3[@class='chapter-design__heading animation-element']")
     public WebElement amgDesignViewConfirmation;
+    @FindBy(xpath = "//h1[@class='title-hero__title']")
+    public WebElement compareVehicleConfirmation;
+    @FindBy(xpath = "//h1[@class='inventory-search-header__heading']")
+    public WebElement inventorySearchConfirmation;
+    @FindBy(xpath = "//h1[@class='title-hero__title']")
+    public WebElement lineupConfirmation;
+    @FindBy(xpath = "//div[@id='certification']//header/h2")
+    public WebElement benefitsCertificationConfirmation;
+    @FindBy(xpath = "//div[@id='warranty']//header/h2")
+    public WebElement benefitsWarrantyConfirmation;
+    @FindBy(xpath = "//div[@id='byd']//header/h2")
+    public WebElement benefitsBuildYourDealConfirmation;
+    @FindBy(xpath = "//div[@id='benifits']//header/h2")
+    public WebElement benefitsSpecialOffersConfirmation;
+
 
     public Homepage(){
         PageFactory.initElements(driver, this);

@@ -8,9 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import shared.MercedesNavigationPage;
 
-import java.time.Duration;
-
-import static java.time.Duration.*;
 
 
 public class VehiclePage extends MercedesNavigationPage {
@@ -21,8 +18,6 @@ public class VehiclePage extends MercedesNavigationPage {
     public WebElement explorePerformance;
     @FindBy(xpath = "//button[@class='link chapter-design__section-toggle-button']")
     public WebElement interiorOption;
-    @FindBy(xpath = "//button[@class='specialty-navigation__item-button']")
-    public WebElement performanceDescription;
 
 
     public VehiclePage(){
