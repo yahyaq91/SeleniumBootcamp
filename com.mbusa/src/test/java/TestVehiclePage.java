@@ -28,11 +28,8 @@ public class TestVehiclePage extends BasePage {
         VehiclePage vehiclePage = mercedesNavigationPage.navigateVehicleOptions("Mercedes-AMG");
         vehiclePage.clickVideoControl();
         vehiclePage.navigateMedia("04.");
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         vehiclePage.clickExplorePerformance();
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         vehiclePage.clickExplorePerformance();
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         vehiclePage.clickExplorePerformance();
 
         Assert.assertTrue(isElementVisible(vehiclePage.amgPerformanceViewConfirmation));
