@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import test_base.TestBasePage;
 
 
-public class Authentication extends TestBasePage {
+public class TestAuthentication extends TestBasePage {
     
 
     @Test (groups = {"BAT"}, dataProviderClass = data_providers.DataProviders.class, dataProvider = "DP1")
