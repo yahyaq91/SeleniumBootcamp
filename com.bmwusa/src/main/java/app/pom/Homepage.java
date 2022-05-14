@@ -72,6 +72,7 @@ public class Homepage extends BasePage {
 
     @FindBy(xpath = "//h1[@class='section-header__copy h-center   headline-5']")
     public WebElement modelChoiceConfirmation;
+    //h3[@class='section-header__copy h-center   headline-3']
 
     public Homepage() {
         PageFactory.initElements(driver, this);

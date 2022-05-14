@@ -13,7 +13,7 @@ public class TestItemListingPage extends BasePage {
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(0);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(0);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
@@ -26,7 +26,7 @@ public class TestItemListingPage extends BasePage {
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(1);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(1);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
@@ -39,7 +39,7 @@ public class TestItemListingPage extends BasePage {
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(2);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(2);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
@@ -52,7 +52,7 @@ public class TestItemListingPage extends BasePage {
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(3);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(3);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
@@ -60,12 +60,12 @@ public class TestItemListingPage extends BasePage {
     @Test
     public void testFindHomeInMinneapolis() {
         Homepage homepage = new Homepage();
-        homepage.navigateToAnyUSHomeListing("Minneapolis");
+        homepage.navigateToAnyUSHomeListing("ListOfUSCities");
         ItemListingPage listingPage = new ItemListingPage();
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(4);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(4);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
@@ -78,7 +78,7 @@ public class TestItemListingPage extends BasePage {
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(5);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(5);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
@@ -91,7 +91,7 @@ public class TestItemListingPage extends BasePage {
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(6);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(6);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
@@ -104,7 +104,7 @@ public class TestItemListingPage extends BasePage {
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(7);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(7);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
@@ -117,7 +117,7 @@ public class TestItemListingPage extends BasePage {
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(8);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(8);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
@@ -130,7 +130,7 @@ public class TestItemListingPage extends BasePage {
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(9);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(9);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
@@ -143,7 +143,7 @@ public class TestItemListingPage extends BasePage {
         listingPage.waitForFirstHomeCard();
 
         String actualLocation = listingPage.locationTagText.getText();
-        String expectedLocation = excel.readStringList("USCities").get(10);
+        String expectedLocation = excel.readStringList("ListOfUSCities").get(10);
 
         Assert.assertTrue(actualLocation.contains(expectedLocation));
     }
