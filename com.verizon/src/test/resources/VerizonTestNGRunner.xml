@@ -8,5 +8,9 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://verizon.com"/>
-
+    <test name="Accessories Page - Phone and Tablet">
+        <classes>
+            <class name="test_smoke.TestAccessoriesPage"/>
+        </classes>
+    </test>
 </suite>

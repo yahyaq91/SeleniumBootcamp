@@ -36,6 +36,9 @@ public class SystemBar extends BasePage {
 
     @FindBy(xpath = "//h1[@class='page-heading']")
     public WebElement wishlistConfirmation;
+    @FindBy(xpath = "//h1[@class='page-heading bottom-indent']")
+    public WebElement creditSlipConfirmation;
+
 
 
     public SystemBar() {

@@ -8,5 +8,9 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://bmwusa.com"/>
-
+    <test name="BMW - Models">
+        <classes>
+            <class name="bmw.TestBMWModelPage"/>
+        </classes>
+    </test>
 </suite>

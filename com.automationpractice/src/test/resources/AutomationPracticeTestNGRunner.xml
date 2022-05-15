@@ -8,5 +8,14 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://automationpractice.com"/>
-
+    <test name="test_app - End_To_End">
+        <classes>
+            <class name="test_app.end_to_end.TestEndToEnd"/>
+        </classes>
+    </test>
+    <test name="test_app - FunctionalityCheck">
+        <classes>
+            <class name="test_app.smoke.FunctionalityChecking"/>
+        </classes>
+    </test>
 </suite>

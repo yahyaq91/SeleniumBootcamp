@@ -8,5 +8,9 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://redfin.com"/>
-
+    <test name="Redfin - Search Listing">
+        <classes>
+            <class name="TestItemListingPage"/>
+        </classes>
+    </test>
 </suite>
