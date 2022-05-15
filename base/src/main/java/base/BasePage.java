@@ -78,7 +78,7 @@ public class BasePage {
 
     @Parameters({"driverConfigEnabled", "browser", "url"})
     @BeforeMethod
-    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("http://mbusa.com") String url) {
+    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("http://www.sofi.com") String url) {
         if (Boolean.parseBoolean(driverConfigEnabled)) {
             driverInit(browser);
             driver.get(url);
@@ -179,6 +179,18 @@ public class BasePage {
 
         return text;
     }
+    public String getElementText(WebElement element) {
+        String text = "";
+        webDriverWait.until(ExpectedConditions.visibilityOf(element));
+
+        text = element.getText();
+
+        if (text.equals("")) {
+            text = element.getAttribute("innerHTML").trim();
+        }
+
+        return text;
+    }
 
     public void clickOnElement(WebElement element) {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(element));
@@ -211,13 +223,13 @@ public class BasePage {
         select.selectByValue(value);
     }
 
-    public boolean isElementVisible(WebElement element) {
+    public WebElement isElementVisible(WebElement element) {
         try {
             fluentWait.until(ExpectedConditions.visibilityOf(element));
         } catch (TimeoutException e) {
-            return false;
+            //return false;
         }
-        return true;
+        //return true;
     }
 
     public void switchToParentFrame() {
@@ -344,6 +356,9 @@ public class BasePage {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
+    }
+
+    public void SignInToOnLineBanking() {
     }
     // endregion
 
