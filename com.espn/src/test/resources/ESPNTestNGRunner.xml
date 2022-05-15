@@ -8,5 +8,9 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://espn.com"/>
-
+    <test name="NBA">
+        <classes>
+            <class name="espn.nba_page.TestNBAPage"/>
+        </classes>
+    </test>
 </suite>
