@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 public class SoccerPage extends Homepage {
 
     @FindBy(xpath = "//a[@name='&lpos=sitenavdefault+soccer_soccerteams']")
+
+//*[@id="global-nav"]/ul/li[5]/div/ul[1]/li[7]/a
     public WebElement teamsButton;
     @FindBy(xpath = "//li[@class='Nav__Secondary__Menu__Item flex items-center n7 relative Nav__Secondary__Menu__Item--active']")
     public WebElement teams;

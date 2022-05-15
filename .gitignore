@@ -2,7 +2,7 @@
 ### Java template
 *.iml
 *.idea
-*target
+
 reports
 
 # Compiled class file

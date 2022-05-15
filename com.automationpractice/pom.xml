@@ -17,6 +17,22 @@
             <artifactId>base</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-api</artifactId>
+            <version>4.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>4.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.metalloid-project</groupId>
+            <artifactId>metalloid-webelement-name</artifactId>
+            <version>2.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>

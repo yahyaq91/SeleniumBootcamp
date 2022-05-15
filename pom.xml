@@ -102,6 +102,14 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.github.metalloid-project</groupId>
+            <artifactId>metalloid-webelement-name</artifactId>
+            <version>2.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

@@ -1,9 +1,6 @@
 package test_app.smoke.end_to_end;
 
-import app.pom.Catalog;
-import app.pom.CreateAccount;
-import app.pom.Homepage;
-import app.pom.Login;
+import app.pom.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import test_base.TestBasePage;
@@ -31,8 +28,12 @@ public class EndToEnd extends TestBasePage {
         String state = GenerateData.state();
         String zipCode = GenerateData.zipCode();
         String phoneNumber = GenerateData.mobilePhone();
-        createAccount.registerNewUser(firstName, lastName, password, day, monthNumber, year,
-                streetAddress, city, state, zipCode, phoneNumber);
+
+//        MyAccount myAccount = createAccount.registerNewUser(firstName, lastName, password, day, monthNumber, year,
+//                streetAddress, city, state, zipCode, phoneNumber);
+
+//        createAccount.registerNewUser(firstName, lastName, password, day, month, year,
+//                streetAddress, city, state, zipCode, phoneNumber);
 
         Catalog catalog = homepage.selectTShirtOption();
         catalog.clickFadedShortSleeveOption();
