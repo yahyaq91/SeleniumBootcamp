@@ -29,7 +29,5 @@ public class NFLPage extends Homepage {
         hoverOverElement(teamsDropDownList);
     }
 
-    public void selectNFLTeam(String team) {
-        driver.findElement(By.xpath(String.format("//ul[@class='Nav__Dropdown__Group flex pa3 bg-clr-gray-09 flex-wrap is--3']//span[contains(text(),'%s')]", team))).click();
-    }
+
 }
